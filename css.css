@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url('66.avif'); /* Imagen de fondo */
+  background-size: cover; /* Ajustar la imagen al tamaño del contenedor */
+  background-position: center; /* Centrar la imagen */
+  background-repeat: no-repeat; /* No repetir la imagen */
+  background-attachment: fixed; /* Fijar la imagen de fondo para que no se mueva al hacer scroll */
+  color: #242222; /* Cambiar el color del texto a blanco para que se vea mejor */
+}
+
+header {
+  background-color: rgba(95, 82, 78, 0.8); /* Naranja Rojo con opacidad */
+  color: #fff;
+  padding: 1em 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1em;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.menu-btn {
+  background-color: rgba(255, 99, 71, 0.8); /* Tomate con opacidad */
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  flex-grow: 1;
+  padding: 2em;
+}
+
+.recipes {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.recipe {
+  
+  background: linear-gradient(45deg, #ffffff, #ffffff, #ffffff);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.recipe img {
+  width: 100%;
+  height: auto;
+}
+
+.recipe-content {
+  padding: 1em;
+}
+
+.recipe-content h2 {
+  margin-top: 0;
+  color: #FF4500; /* Naranja fuerte */
+}
+
+footer {
+  background-color: rgba(255, 69, 0, 0.8); /* Naranja Rojo con opacidad */
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+
+@media (max-width: 300px) {
+  .menu {
+      display: none;
+      flex-direction: column;
+  }
+
+  .menu-btn {
+      display: block;
+  }
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+}
+.recipe img {
+  width: 200px; /* Ancho de la imagen */
+  height: 200px; /* Alto de la imagen */
+  object-fit: cover; /* Ajustar la imagen sin deformarla */
+  border-radius: 50%; /* Borde redondeado para un aspecto más estilizado */
+}
+h1{
+  font-family: "Lugrasimo", cursive;
+}
+p{
+  font-family: "Lugrasimo", cursive;
+}
+
+h2{
+  font-family: "Lilita One", sans-serif;
+}
+
+
+
+
